@@ -1,12 +1,14 @@
 # WebAssembly
 
+개인 공부용
+
 ## AssemblyScript
 
 - ts 문법 기반으로 WebAssembly를 쉽게 작성 할 수 있도록 해주는 언어로 ts와 유사함,
 - js 대신 webassembly 바이너리로 컴파일 됨
 - 프론트 개발자가 좀 더 쉽게 assembly 코드를 테스트 할 수 있음
 - 웹에서 고성능 애플리케이션을 개발 할 수 있도록 해주며, js보다 빠른 실행속도를 제공할 수 있게 해줌
-- 하지만 아직 정식 버전이 안 나옴 현재 0.27.27 버전까지 나옴. 이걸로 뭘 할 수 있을지 고민 좀 해봐야겠음 (간단하게 블러이미지 생성기 만들어볼까?)
+- 하지만 아직 정식 버전이 안 나옴 현재 0.27.27 버전까지 나옴. 이걸로 뭘 할 수 있을까 고민 좀 해봐야겠음 (간단하게 블러이미지 생성기 만들어볼까?)
 
 ### react 프로젝트내 적용 방법
 
@@ -108,7 +110,6 @@ return (
       <p>{wasmModule?.add(1, 2)}</p>
       <p>{wasmModule?.subtract(0, -1)}</p>
       <p>{wasmModule?.multiply(5, 5)}</p>
-      <p>{wasmModule?.factorial(22)}</p>
     </div>
   </div>
 );
@@ -133,5 +134,13 @@ useEffect(() => {
 
 ```
 
+## 정리
+
+공부하면서 어디에 사용 할 수 있다고는 설명이 되어 있어 알고 있지만 개인적으로는 아직까지는 어떻게 사용하면 좋을지 모르겠다. 지금 당장으로는 뭔가 매우 복잡한 연산을 진행하고자 할 때 좀 더 좋은 퍼포먼스를 낼 수 있도록 할 수 있을거 같다는 생각이 든다. js를 대체하는것 보다는 상호 작용하기 위함을 목적으로 하고 있어 활용할 줄 알면 좋은 도구가 될 수 있을거 같다.
+
+- https://developer.mozilla.org/ko/docs/WebAssembly
+- https://developer.mozilla.org/ko/docs/WebAssembly/Concepts
+- https://developer.mozilla.org/ko/docs/WebAssembly/Using_the_JavaScript_API
 - https://www.assemblyscript.org/
 - https://meetup.nhncloud.com/posts/121
+- https://tech.kakao.com/posts/438
